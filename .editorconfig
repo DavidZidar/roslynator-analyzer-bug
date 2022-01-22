@@ -1,0 +1,17 @@
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.cs]
+roslynator_accessibility_modifiers = explicit
+roslynator_enum_has_flag_style = operator
+roslynator_object_creation_type_style = implicit_when_type_is_obvious
+
+# CA1062: Validate arguments of public methods
+dotnet_diagnostic.CA1062.severity = none
+
+# RCS1018: Add default access modifier
+dotnet_diagnostic.RCS1018.severity = warning
